@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BlogDeCafé</title>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:w
+ght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<header class="header">
+<div class="contenedor">
+<div class="barra">
+<a class="logo" href="index.html">
+
+<h1 class="logo__nombre no-margin centrar-
+texto">Blog<span class="logo__bold">DeCafé</span></h1>
+<script language="JavaScript">
+    
+    function mueveReloj(){
+        momentoActual = new Date()
+        hora = momentoActual.getHours()
+        minuto = momentoActual.getMinutes()
+        segundo = momentoActual.getSeconds()
+    
+        horaImprimible = hora + " : " + minuto + " : " + segundo
+    
+        document.form_reloj.reloj.value = horaImprimible
+    
+        setTimeout("mueveReloj()",1000)
+    }
+    </script>
+    </head>
+    
+    <body onload="mueveReloj()">
+    
+    
+    
+    <form name="form_reloj">
+    <input type="text" name="reloj" size="10">
+    </form>
+
+</a>
+<nav class="navegacion">
+<a href="nosotros.html"
+class="navegacion__enlace">Nosotros</a>
+<a href="cursos.html"
+class="navegacion__enlace">Cursos</a>
+<a href="contacto.html"
+class="navegacion__enlace">Contacto</a>
+</nav>
+</div>
+</div>
+<div class="header__texto">
+<h2 class="no-margin">Blog de café con consejos y cursos</h2>
+<p class="no-margin">Aprende de los expertos con las mejores
+recetas y consejos</p>
+</div>
+</header>
+<main class="contenedor">
+
+<h3 class="centrar-texto">Contacto</h3>
+<div class="contacto-bg"></div>
+
+<form class="formulario">
+   
+    
+
+    <div class="campo 1">
+        <label class="campo__label" for="nombre">Nombre</label>
+        <input
+        class="campo__field"
+        type="text"
+        placeholder="Tu Nombre"
+        id="nombre"
+        >
+    </div>
+
+    <div class="campo 2">
+        <label class="campo__label" for="email">E-mail</label>
+        <input
+        class="campo__field"
+        type="email"
+        placeholder="Tu E-mail"
+        id="email"
+        >
+    </div>
+
+    <div class="campo 3">
+            <label class="campo__label" for="telefono">telefono</label>
+            <input
+            class="campo__field"
+            type="number"
+            placeholder="Tu telefono"
+            id="telefono"
+            >       
+    </div>
+
+    <div class="campo">
+        <label class="campo__label" for="mensaje">Mensaje</label>
+        <textarea
+        class="campo__field campo__field--textarea"
+        id="mensaje"
+        ></textarea>
+    </div>
+
+    <div class="campo">
+        <input type="submit" value="Enviar" class="boton boton--
+
+        primario">
+    </div>
+
+</form>
+
+
+</main>
+<footer class="footer">
+<div class="contenedor">
+<div class="barra">
+<a class="logo" href="index.html">
+
+<h1 class="logo__nombre no-margin centrar-
+texto">Blog<span class="logo__bold">DeCafé</span></h1>
+
+</a>
+<nav class="navegacion">
+
+<a href="nosotros.html"
+class="navegacion__enlace">Nosotros</a>
+<a href="cursos.html"
+class="navegacion__enlace">Cursos</a>
+<a href="contacto.html"
+class="navegacion__enlace">Contacto</a>
+<img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+</nav>
+</div>
+</div>
+</footer>
+<script>
+    function Valida(formulario) {
+      if ((formulario.campo1.value.length == 0) || (formulario.campo2.value.length ==0)|| (formulario.campo3.value.length ==0)) {
+        alert('falta informacion');
+        return false
+      }
+      return true
+      }
+    </script>
+
+</html>
+
+
+
+
+
+https://animated-klepon-76e288.netlify.app/nosotros.html

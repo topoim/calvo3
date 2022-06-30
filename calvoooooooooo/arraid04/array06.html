@@ -1,0 +1,31 @@
+<script>
+
+
+
+
+
+var diaSemana = ['Dilluns','Dimarts','Dimecres','Dijous','Divendres','Dissabte','Diumenge'];
+
+ 
+
+Dia_del_mes();
+
+ 
+
+function Dia_del_mes () {
+
+ 
+
+    var dia = Math.random() * 7 + 1 ;
+
+    dia = (Math.trunc(dia));
+
+    console.log(dia);
+
+ 
+
+    alert(diaSemana[dia-1]);
+
+}
+
+</script>
